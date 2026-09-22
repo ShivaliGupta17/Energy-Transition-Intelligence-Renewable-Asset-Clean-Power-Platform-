@@ -1,0 +1,64 @@
+====================================================================
+ENERGY TRANSITION INTELLIGENCE: READY-TO-USE POWER BI DAX MEASURES
+====================================================================
+
+1. Total Generation (TWh)
+Total_Generation_TWh = SUM(master_energy_transition_for_powerbi[generation_twh])
+
+2. Clean Generation (TWh)
+Clean_Generation_TWh = 
+CALCULATE(
+    SUM(master_energy_transition_for_powerbi[generation_twh]),
+    master_energy_transition_for_powerbi[category] IN {"Renewable", "Low-Carbon"}
+)
+
+3. Clean Energy Penetration Share (%)
+Clean_Share_Pct = 
+DIVIDE(
+    [Clean_Generation_TWh],
+    [Total_Generation_TWh],
+    0
+) * 100
+
+4. Total Installed Capacity (GW)
+Total_Capacity_GW = SUM(master_energy_transition_for_powerbi[capacity_gw])
+
+5. Renewable Installed Capacity (GW)
+Renewable_Capacity_GW = 
+CALCULATE(
+    SUM(master_energy_transition_for_powerbi[capacity_gw]),
+    master_energy_transition_for_powerbi[category] = "Renewable"
+)
+
+6. Year-over-Year (YoY) Capacity Addition (GW)
+Capacity_YoY_Growth_GW = 
+VAR CurrentCapacity = [Renewable_Capacity_GW]
+VAR PreviousCapacity = 
+    CALCULATE(
+        [Renewable_Capacity_GW],
+        SAMEPERIODLASTYEAR(master_energy_transition_for_powerbi[year])
+    )
+RETURN
+    IF(
+        NOT ISBLANK(PreviousCapacity),
+        CurrentCapacity - PreviousCapacity,
+        BLANK()
+    )
+
+7. Average Solar LCOE ($/MWh)
+Avg_Solar_LCOE = 
+CALCULATE(
+    AVERAGE(master_energy_transition_for_powerbi[lcoe_usd_per_mwh]),
+    master_energy_transition_for_powerbi[name_y] = "Solar PV"
+)
+
+8. Total Emissions (MtCO2)
+Total_Emissions_MtCO2 = SUM(master_energy_transition_for_powerbi[emissions_mtco2])
+
+9. Carbon Intensity of Electricity Grid (gCO2 / kWh)
+Grid_Carbon_Intensity = 
+DIVIDE(
+    [Total_Emissions_MtCO2] * 1000000,
+    [Total_Generation_TWh] * 1000,
+    0
+)
