@@ -183,6 +183,5 @@ For corporate presentations in Power BI Desktop:
 ## 👤 Author
 
 **Shivali Gupta**  
-*M.Sc. Data Science, Indian Institute of Information Technology, Lucknow (GPA: 9.15)*  
-*B.Sc. in Mathematics*  
+*M.Sc. Data Science, Indian Institute of Information Technology, Lucknow (GPA: 9.15)*    
 * [LinkedIn](https://www.linkedin.com/in/shivali-gupta07/) • [GitHub](https://github.com/ShivaliGupta17) • Email: [shivaligpt17@gmail.com](mailto:shivaligpt17@gmail.com)
