@@ -1,0 +1,37 @@
+code,name,region,income,net_zero_target
+USA,United States,North America,High,2050
+CHN,China,Asia-Pacific,Upper-Middle,2060
+IND,India,Asia-Pacific,Lower-Middle,2070
+DEU,Germany,Europe,High,2045
+GBR,United Kingdom,Europe,High,2050
+FRA,France,Europe,High,2050
+JPN,Japan,Asia-Pacific,High,2050
+BRA,Brazil,Latin America,Upper-Middle,2050
+CAN,Canada,North America,High,2050
+AUS,Australia,Asia-Pacific,High,2050
+NOR,Norway,Europe,High,2050
+ESP,Spain,Europe,High,2050
+ITA,Italy,Europe,High,2050
+NLD,Netherlands,Europe,High,2050
+SWE,Sweden,Europe,High,2045
+DNK,Denmark,Europe,High,2050
+KOR,South Korea,Asia-Pacific,High,2050
+SAU,Saudi Arabia,Middle East,High,2060
+ARE,United Arab Emirates,Middle East,High,2050
+ZAF,South Africa,Africa,Upper-Middle,2050
+EGY,Egypt,Africa,Lower-Middle,2050
+MEX,Mexico,Latin America,Upper-Middle,2050
+CHL,Chile,Latin America,High,2050
+ARG,Argentina,Latin America,Upper-Middle,2050
+IDN,Indonesia,Asia-Pacific,Upper-Middle,2060
+VNM,Vietnam,Asia-Pacific,Lower-Middle,2050
+TUR,Turkey,Europe/Asia,Upper-Middle,2053
+POL,Poland,Europe,High,2050
+BEL,Belgium,Europe,High,2050
+AUT,Austria,Europe,High,2040
+CHE,Switzerland,Europe,High,2050
+PRT,Portugal,Europe,High,2045
+FIN,Finland,Europe,High,2035
+IRL,Ireland,Europe,High,2050
+NZL,New Zealand,Asia-Pacific,High,2050
+SGP,Singapore,Asia-Pacific,High,2050

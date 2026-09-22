@@ -1,0 +1,8 @@
+tech_id,name,category,emission_factor_gco2_kwh
+1,Solar PV,Renewable,45
+2,Onshore Wind,Renewable,11
+3,Offshore Wind,Renewable,12
+4,Hydropower,Renewable,24
+5,Nuclear,Low-Carbon,12
+6,Natural Gas,Fossil,490
+7,Coal,Fossil,820
